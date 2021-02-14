@@ -15,6 +15,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
 
+    <link id="theme-style" rel="stylesheet" href="">
+
 </head>
 <body>
 
@@ -35,34 +37,137 @@
                     </ul>
                 </div>
                 <div class="left-column">
-                    Left
+                    <img id="profile_pic" src="/images/ivan.jpg">
+                    <h5 style="text-align:center; line-height:0;">Personalize Theme</h5>
+                    <div class="theme-options-wrapper">
+                        <div data-mode="light" id="light-mode" class="theme-dot"></div>
+                        <div data-mode="blue" id="blue-mode" class="theme-dot"></div>
+                        <div data-mode="green" id="green-mode" class="theme-dot"></div>
+                        <div data-mode="purple" id="purple-mode" class="theme-dot"></div>
+                    </div>
+                    <p id="setting-note">*Theme settings will be saved for <br> your next visit</p>                
                 </div>
                 <div class="right-column">
-                    Right
+                    <div id="preview-shadow">
+                        <div id="preview">
+                            <div id="corner-tl" class="corner"></div>
+                            <div id="corner-tr" class="corner"></div>
+                            <h3>What I do</h3>
+                            <p>I am a developer in life and sometimes teaching basics of languages.</p>
+                            <div id="corner-bl" class="corner"></div>
+                            <div id="corner-br" class="corner"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <p>This is a sentence</p>
-            <a href="#">Link</a>
         </div>
     </section>
 
     <section class="s2">
         <div class="main-container">
-            About
+            <div class="about-wrapper">
+                <div class="about-me">
+                    <h4>More about me</h4>
+                    <p>I build some projects just to tickle my brain and
+                        love teaching others how they're made.
+                    </p>
+                    <p>WhileI keep busy teaching courses, I still
+                        take interviews in search of great team & 
+                        projects that interest me.
+                    </p>
+                    
+                    <hr>
+                    <h4>TOP EXPERTISE</h4>
+                    
+                    <p>Full stack developer with primary focus on Django +
+                        React: <a target="_blank" href="cv_es.pdf">Download Resume</a>
+                    </p>
+
+                    <div id="skills">
+                        <ul>
+                            <li>Python</li>
+                            <li>Django</li>
+                            <li>JavaScript</li>
+                            <li>React</li>
+                            <li>Postgres</li>
+                        </ul>
+
+                        <ul>
+                            <li>Google Maps Api</li>
+                            <li>Js Charts</li>
+                            <li>AWS (RDS/S3)</li>
+                            <li>Heroku</li>
+                            <li>HTML/CSS</li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="social-links">
+                    <img id="social_img" src="/images/social.png">
+                    <h3>Find me on github & linkdn</h3>
+                    <a href="_blanck" href="#">github : @ivaniuss </a>
+                </div>
+            </div>
         </div>
     </section>
     
     <section class="s1">
         <div class="main-container">
-            Portfolio
+            <h3 style="text-align:center;">Some of my past projects</h3>
+            <div class="post-wrapper">
+                <div>
+                    <div class="post">
+                        <img class="thumbnail" src="/images/project.jpg" alt="">
+                        <div class="post-preview">
+                            <h6 class="post-title">Post Title</h6>
+                            <p class="post-intro">This is a sentence. Some more text.</p>
+                            <a href="post.html">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="post">
+                        <img class="thumbnail" src="/images/project.jpg" alt="">
+                        <div class="post-preview">
+                            <h6 class="post-title">Post Title</h6>
+                            <p class="post-intro">This is a sentence. Some more text.</p>
+                            <a href="post.html">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="post">
+                        <img class="thumbnail" src="/images/project.jpg" alt="">
+                        <div class="post-preview">
+                            <h6 class="post-title">Post Title</h6>
+                            <p class="post-intro">This is a sentence. Some more text.</p>
+                            <a href="post.html">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <section class="s2">
         <div class="main-container">
-            Contact
+            <h3 style="text-align:center;">Get In Touch</h3>
+            <form id="contact-form">
+                <label for="">Name</label>
+                <input class="input-field" type="text" name="name">
+                <label for="">Subject</label>
+                <input class="input-field" type="text" name="subject">
+                <label for="">Email</label>
+                <input class="input-field" type="text" name="email">
+                <label for="">Message</label>
+                <textarea class="input-field" name="message"></textarea>
+                <input id="submit-btn" type="submit" value="Send">
+                
+            </form>
         </div>
     </section>
+
+    <script src="/script.js"></script>
 
 </body>
 </html>
