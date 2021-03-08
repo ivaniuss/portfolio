@@ -70,7 +70,7 @@ h6{ font-size: 16px;}
     text-align: center;
     align-content: center;
     display: grid;
-    min-height: 10em;
+    
 }
 
 .intro-wrapper{
@@ -217,13 +217,17 @@ h6{ font-size: 16px;}
     height: 180px;
     padding-left: 30px;
     padding-top: 30px;
+   
 }
+
 
 #preview{
     width: 300px;
     border:1.5px solid #17a2b8;
     background-color: var(--previewBg);
     padding: 15px;
+    padding-bottom: 50px;
+   
     position: relative;
 }
 
